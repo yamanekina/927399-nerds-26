@@ -9,10 +9,10 @@
         <nav>
             <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
             <ul>
-                <li><a href="about-us.html"></a>Студия</li>
-                <li><a href="clients.html"></a>Клиенты</li>
-                <li><a href="catalog.html"></a>Магазин</li>
-                <li><a href="contacts.html"></a>Контакты</li>
+                <li><a href="about-us.html">Студия</a></li>
+                <li><a href="clients.html">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
                 <li><a href="login.html">Корзина</a></li>
@@ -22,7 +22,67 @@
     </header>
     <main>
         <section>
-            <h2>Параметры сортировки</h2>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                  <legend>Стоимость:</legend>
+                  <div><!--див, в котором находятся бегунки и полоска-->
+                    <div></div><!--див, в котором полоска-->
+                      <span></span><!--бегунок-->
+                      <span></span>
+                  </div>
+                  <p>
+                    <label>От <input class="filter-price-value" type="number" name="price-from" id="filter-price-from" value="0"></label>
+                    <label>До <input class="filter-price-value" type="number" name="price-to" id="filter-price-to" value="15000"></label>
+                  </p>
+                </fieldset>  
+                <fieldset>
+                  <legend>Сетка:</legend>
+                   <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="adaptive" name="layout-type" id="filter-adaptive" checked> 
+                      <label for="filter-adaptive">Адаптивная</label> 
+                    </li>
+                    <li>
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="fixed" name="layout-type" id="filter-fixed"> 
+                      <label for="filter-fixed">Фиксированная</label> 
+                    </li>
+                    <li>
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="stretch" name="layout-type" id="filter-stretch"> 
+                      <label for="filter-stretch">Резиновая</label> 
+                    </li> 
+                   </ul>   
+                </fieldset>
+                <fieldset>
+                  <legend>Особенности:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                      <label for="filter-features">Блок преимуществ</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галерея</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                      <label for="filter-cart">Корзина</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+              </form>  
+        </section>
+        <section>
+            <h2 class="visually-hidden">Параметры сортировки</h2>
             <p>Сортировать:</p>
             <ul>
                 <li><a>По цене</a></li>
@@ -33,7 +93,7 @@
             </ul>
         </section>
         <section>
-            <h2>Список товаров</h2>
+            <h2 class="visually-hidden">Список товаров</h2>
             <ul>
                 <li>
                         <img src="img/catalog-item-1.jpg" width="360" height="576" alt="Седона">
@@ -80,7 +140,7 @@
             </ul>
         </section>
         <section>
-            <h2>Как добраться</h2>
+            <h2 class="visually-hidden">Как добраться</h2>
             <img src="img/map.png" width="1440" height="418" 
                 alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
             <div>
@@ -90,12 +150,31 @@
                 <a href="#">Напишите нам</a>
             </div>    
         </section>
+        <section>
+            <h2>Напишите нам</h2>
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <p>
+                <label for="write-us-name">Напишите нам:</label>
+                <input type="text" name="name" id="write-us-name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="write-us-email">Ваш e-mail:</label>
+                <input type="text" name="email" id="write-us-email" value="" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="write-us-text">Текст письма:</label>
+                <textarea name="text" id="write-us-text" value="" placeholder="В свободной форме" rows="5"></textarea>
+              </p>
+              <button type="submit">Отправить</button>
+              <a href="#">Закрыть</a>
+            </form>  
+          </section>
     </main>
     <footer>
         <ul>
-            <li><a href="#">Вконтакте</a>
-            <li><a href="#">Фейсбук</a>
-            <li><a href="#">Инстаграм</a>
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Инстаграм</a></li>
         </ul>
         <div>
             <h3>Давайте дружить, это выгодно!</h3>
