@@ -1,0 +1,428 @@
+body {
+   margin: 0;
+   padding: 0;
+   
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #283136;
+   
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+}
+
+.main-navigation img:hover {
+    opacity: 0.7;
+}
+
+.main-navigation img:active {
+    opacity: 0.2;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current {
+    color: #000000;
+    border-bottom: 2px solid #fb565a;
+}
+
+.button {
+    font: inherit;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+  
+    border: none;
+}
+
+.button-red {
+    background-color: #fb565a;
+} 
+
+.button-red:hover {
+    background-color: #e74246;
+}
+
+.button-red:active {
+    background-color: #d7373b;
+    color: #e06366;
+    box-shadow: inset 0px 3px 0px 0px #c13135;
+} 
+
+.button-green {
+    background-color: #00ca74;
+} 
+
+.button-green:hover {
+    background-color: #00bc6c;
+}
+
+.button-green:active {
+    background-color: #00aa62;
+    color: #4dc491;
+    box-shadow: inset 0px 3px 0px 0px #009958;
+} 
+
+.button-yellow {
+    background-color: #efc84a;
+} 
+
+.button-yellow:hover {
+    background-color: #eab534;
+}
+
+.button-yellow:active {
+    background-color: #e5a722;
+    color: #edc265;
+    box-shadow: inset 0px 3px 0px 0px #ce961f;
+}
+
+.slider {
+    background-color: #eeeeee;
+}
+
+.slider-slide-slogan {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.slider-slide {
+    list-style-type: none;
+}
+
+.options-list {
+    list-style: none;
+}
+
+.options-item {
+    text-align: left;
+}
+
+.options-item h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.about-services {
+    text-align: left;
+}
+
+.about-percents {
+    text-align: center;
+}
+
+.about-percents ul {
+    list-style-type: none;
+}
+
+.about-percents-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.about-services-firstline {
+    color: #000000;
+    font-size: 45px;
+    line-height: 45px;
+ }
+
+.about-features {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+} 
+
+.about-percents-value {
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+}
+
+.about-percents-list,
+.partners-list {
+    list-style: none;
+}
+
+.partners-list img {
+    opacity: 0.2;
+}
+
+.partners-list img:hover {
+    opacity: 1;
+}
+
+.partners-list img:active {
+    opacity: 0.1;
+}
+
+.map-contacts {
+    background-color: #ffffff;
+}
+
+.map-contacts-name {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.map-contacts-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;   
+}
+
+.write-us h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.write-us-item label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    color: #444444;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+    border-color: #b4b9bb;
+    color: #444444;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+    border-color: #000000;
+    color: #444444;
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-friends h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer-friends p {
+    line-height: 22px;
+}
+
+/*стилизация элементов страницы каталога*/
+.h1 {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.filters-form legend,
+.sort-firstline {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.filters-form fieldset {
+    border: none;
+}
+
+.range-numbers label {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.filter-price-value {
+    background-color: #eeeeee;
+    border-radius: 2px;
+    font: inherit;
+    box-shadow: none;
+}
+
+.filters-form ul {
+    list-style: none;
+    line-height: 36px;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.button-filters {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.button-filters:hover {
+    color: #000000;
+    background-color: #dfdfdf;
+}
+
+.button-filters:active {
+    color: rgba(0, 0, 0, 0.2);
+    background-color: #d5d5d5;
+    box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+}
+
+.sort ul {
+    list-style: none;
+}
+
+.sort-options a,
+.sort-options-triangle a{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.sort-options a:hover,
+.sort-options-triangle a:hover {
+    opacity: 0.5
+}
+
+.sort-options a:active,
+.sort-options-triangle a:active,
+.sort-options-current a {
+    opacity: 1;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-bar {
+    height: 41px;
+    width: 360px;
+    background-color: #e9e9e9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.catalog-item:hover .catalog-item-bar {
+    background-color: #4d4d4d;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item-info {
+    background-color: #eeeeee;
+    text-align: center;
+    width: 360px;
+}
+
+.catalog-item-name a,
+.catalog-item-name a:hover,
+.catalog-item-name a:focus,
+.catalog-item-name a:active {
+    color: #000000;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #000000;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+
+    background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+    background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+    background-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 0px 0px #bfbfbf; 
+}
+
+.pagination-item-current a {
+    background-color: #ffffff;
+    border-color: #dbdbdb;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ----- Сеточные стили ----- */
